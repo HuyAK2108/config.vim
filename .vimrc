@@ -5,7 +5,9 @@ set tabstop=2
 set hlsearch
 set cursorline
 set cursorcolumn
-set list
+set showcmd
+set showmode
+"set list
 "set listchars=eol:$,tab:...,trail:~,extends:>,precedes:<
 "set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
@@ -42,3 +44,5 @@ map <silent> <leader><cr> :noh<cr>
 map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>
 map <leader>te :tabedit <C-r>=escape(expand("%:p:h"), " ")<cr>/
+
+nnoremap q <C-V>
